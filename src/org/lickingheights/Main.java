@@ -9,6 +9,7 @@ public class Main {
 	keyboard = new Scanner(System.in);
 
 	int randomNumber, userNumber;
+	String answer;
 	randomNumber = (int) (Math.random() * 100);
 	System.out.println(randomNumber);
 
@@ -30,6 +31,12 @@ while (userNumber < randomNumber || userNumber > randomNumber){
 		}
 		if (userNumber == randomNumber){
 			System.out.println(randomNumber+ " is the correct number you got it right");
+			System.out.println("Good job you got it right, do you want to play again");
+			answer = keyboard.nextLine();
+			while(!(answer == "yes"));
+			
+
+
 		}
 
 
